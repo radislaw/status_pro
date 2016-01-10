@@ -13,6 +13,7 @@ const reload = browserSync.reload;
 
 gulp.task('views', () => {
 	return gulp.src('app/*.jade')
+		.pipe($.plumber())
 		.pipe($.jade({
 			pretty: true
 		}))
