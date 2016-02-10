@@ -1,16 +1,16 @@
 extends layouts/default
 
 block content
-	.row.marketing
-		.col-lg-6
-			h4 HTML5 Boilerplate
-			p HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-
-			h4 Sass
-			p Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
-
-			h4 Bootstrap
-			p Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.
-
-			h4 Modernizr
-			p Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.
+  .row.marketing
+    .col-lg-12
+      h4 Добро пожаловать в систему безналичных платежей
+      h4 Войдите в систему!
+      form
+        .form-group
+          label(for="exampleInputEmail1") Адресс электронной почты
+          input#exampleInputEmail1.form-control(type="email" placeholder="Email")
+        .form-group
+          label(for="exampleInputPassword1") Пароль
+          input#exampleInputPassword1.form-control(type="password" placeholder="Пароль")
+        button.btn.btn-primary(type="submit") Войти <br/>
+        a(href="#" style="display:block;") Зарегестрироваться
