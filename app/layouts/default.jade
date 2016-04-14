@@ -25,12 +25,11 @@ html.no-js
     | <!--[if lt IE 10]>
     |   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     | <![endif]-->
-    #wrap
-      .container
-        include ../includes/header
-        block content
-        #push
-        include ../includes/footer
+    include ../includes/navbar
+    .container
+      block content
+      #push
+      include ../includes/footer
 
 
     // Google Analytics: change UA-XXXXX-X to be your site's ID.
